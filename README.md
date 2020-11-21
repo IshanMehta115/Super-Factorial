@@ -15,3 +15,4 @@ void display():   This function prints the values of the acc array from the inde
 
 
 This function is tested to be able to calculate the exact values of factorials of n, where n can be upto 50,000.
+To calculate the factorial of 50,000 and print all its digits on the console takes about 3min 50 secs.
