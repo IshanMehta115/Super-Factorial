@@ -57,8 +57,8 @@ void display()
      cout<<'\n';
      cout<<"digits = "<<digit<<'\n';
      cout<<"zeroes = "<<zeroes<<'\n';
-     cout<<"first 10 digits are \n";
-     for(int i=0;i<10;i++)
+     cout<<"first "<<index<<" digits are \n";
+     for(int i=0;i<index;i++)
      {
          cout<<first[i]<<' ';
      }
