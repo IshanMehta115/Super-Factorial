@@ -22,15 +22,16 @@ void set():   This function fills all the positions of the acc array by 0 and se
 void display():   This function stores the values of the acc array from the index max_size-1 to 0 in a file fact.txt. This is the exact value of the factorial.
 
 Addition information is also printed on the console.
-acc set : It means that the main accumulator is initialised.
 
-fact calculated : It means that the value of the factorial is calculated and stored in the accumulator array.
+      acc set : It means that the main accumulator is initialised.
 
-total units = x : Here x means the number of elements of the accumulator array of size max_size which are actually used.
+      fact calculated : It means that the value of the factorial is calculated and stored in the accumulator array.
 
-saved in file : It means the factorial value is saved in fact.txt
+      total units = x : Here x means the number of elements of the accumulator array of size max_size which are actually used.
 
-done : All steps completed and program ends successfully.
+      saved in file : It means the factorial value is saved in fact.txt
+
+      done : All steps completed and program ends successfully.
 
 
 This function is tested to be able to calculate the exact values of factorials of n, where n can be upto 100,000.
