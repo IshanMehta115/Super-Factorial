@@ -1,18 +1,37 @@
 # Super-Factorial
-A program that calculates and prints the values of factorials till 50000
+A program that calculates and prints the values of factorials till 100,000
 
-max_size is defined as 1000000. It is the size of the accumulator array.
+max_size is defined as 50732. It is the size of the accumulator array.
 
-int acc[max_size].  It contains the results of the factorials.a[0] contains the one's digit,a[1] contains the ten's digit ..... a[i] contains the 10^i 's digit.
+int power : power = max number of digits allowed in one element of accumulator array.
+
+int base : base = 10^power , it is the base in which the final and intermediate factorial results are represented.
+
+int acc[max_size].  It contains the final and intermediate results of the factorials.
+
+If we have to store a number x in the accumulator array , then we first represent it in the base defined above. That is x = base^n * an + base^(n-1) * a(n-1) ..... base^0 * a0
+
+Then the accumulator value at index i is simply ai from the above expression. Doing this helps reduce the max_size of the accumulator array by 9 times (because each element now contains 9 times more digits).
 
 void mult(int n). Multiplies the number n with the acc array digit by digit. Takes the carry to the next digit. And stores the new product in the acc array only.
 
-void fact(int n): It is a recursive function which calls mult(n) and then calls itself as fact(n-1).This function return immediately if n==0.
+void fact(int n): This function has a loop running from i = 1 to n , in each iteration it calls mult(i) which multiplies i to the accumulator array.
 
 void set():   This function fills all the positions of the acc array by 0 and sets a[0]=1.This configuration is means that the acc array contains the number 1.And now on the mult() function can be used to multiply numbers in this array.
 
-void display():   This function prints the values of the acc array from the index max_size-1 to 0. This is the exact value of the factorial. This function also prints the number of digits in the result factorial without leading 0s.In the next line the function prints the number of trailing 0s in the factorial.In the last line the function prints the first 10 most siginificant digits of the factorial.
+void display():   This function stores the values of the acc array from the index max_size-1 to 0 in a file fact.txt. This is the exact value of the factorial.
+
+Addition information is also printed on the console.
+acc set : It means that the main accumulator is initialised.
+
+fact calculated : It means that the value of the factorial is calculated and stored in the accumulator array.
+
+total units = x : Here x means the number of elements of the accumulator array of size max_size which are actually used.
+
+saved in file : It means the factorial value is saved in fact.txt
+
+done : All steps completed and program ends successfully.
 
 
-This function is tested to be able to calculate the exact values of factorials of n, where n can be upto 50,000.
-To calculate the factorial of 50,000 and print all its digits on the console takes about 3min 50 secs.
+This function is tested to be able to calculate the exact values of factorials of n, where n can be upto 100,000.
+To calculate the factorial of 100,000 and stores all its digits in the file fact.txt in takes about a minute.
