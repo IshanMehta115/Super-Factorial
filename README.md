@@ -34,5 +34,5 @@ void display():   This function stores the values of the acc array from the inde
 5. done : All steps completed and program ends successfully.
 
 
-This function is tested to be able to calculate the exact values of factorials of n, where n can be upto 100,000.
-To calculate the factorial of 100,000 and stores all its digits in the file fact.txt in takes about a minute.
+**This function is tested to be able to calculate the exact values of factorials of n, where n can be upto 100,000.
+To calculate the factorial of 100,000 and stores all its digits in the file fact.txt it takes about a minute.**
