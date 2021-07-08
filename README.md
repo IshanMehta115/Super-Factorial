@@ -27,7 +27,7 @@ Then the accumulator value at index i is simply ai from the above expression. Do
 
 2. **fact calculated** : It means that the value of the factorial is calculated and stored in the accumulator array.
 
-3. **total units = x **: Here x means the number of elements of the accumulator array of size max_size which are actually used.
+3. **total** **units** **x** : Here x means the number of elements of the accumulator array of size max_size which are actually used.
 
 4. **saved in file** : It means the factorial value is saved in fact.txt
 
