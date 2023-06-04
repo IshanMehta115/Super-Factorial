@@ -35,4 +35,4 @@ Then the accumulator value at index i is simply ai from the above expression. Do
 
 
 **This function is tested to be able to calculate the exact values of factorials of n, where n can be upto 100,000.
-To calculate the factorial of 100,000 and stores all its digits in the file fact.txt it takes about a minute.**
+To calculate the factorial of 100,000 and store all its digits in the file fact.txt it takes about a minute.**
